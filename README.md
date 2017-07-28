@@ -47,6 +47,6 @@ All arguments are passed through to `btrfs qgroup show`, so you can get started 
 
 The current version of this script does not allow sorting by path as it passes
 all arugments through to btrfsprogs. If you need sorting by path, either submit a PR
-or use the original version of the script.
+or use the original version of the script [here](https://github.com/stecman/btrfs-df/commit/096f480cad6ba5c0573d9523093195a1e33f5808).
 
 This was originally based on [a shell script that was too slow](https://github.com/agronick/btrfs-size).
