@@ -111,7 +111,7 @@ path_column = [
 # Iterate through all lines except for the table header
 for index,line in enumerate(output):
     # Ignore header rows
-    if index < 1:
+    if index <= 1:
         continue
 
     groupid = get_qgroup_id(line)
