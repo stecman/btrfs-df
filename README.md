@@ -35,7 +35,9 @@ timemachine/timemachine.20170204            0/5083      145.47GiB    999.45MiB
 
 For this to work on a BTRFS volume, you first need to enable quotas on the volume:
 
-   btrfs quota enable /mnt/some-volume
+```bash
+btrfs quota enable /mnt/some-volume
+```
 
 All arguments are passed through to `btrfs qgroup show`, so you can get started with:
 
