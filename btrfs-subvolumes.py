@@ -126,4 +126,8 @@ column_width = len(max(path_column, key=len)) + 2
 
 # Output data with extra column for path
 for index,line in enumerate(output):
+    if path_column[index] is "":
+        # We can't print anything useful for qgroups that aren't associated with a path
+        continue
+
     print(path_column[index].ljust(column_width) + output[index])
